@@ -19,7 +19,7 @@ const Posts = () => {
   return (
     <Container>
       <h3 className='mt-4'>All Available Post</h3>
-      <h6 className='mb-4 text-primary'>Total posts {posts.length}</h6>
+      <h6 className='mb-4 text-primary'>Total posts: {posts.length}</h6>
       <Row xs={1} md={2} lg={3} xl={4} className="g-4">
         {
           posts.map(post=> <Post
