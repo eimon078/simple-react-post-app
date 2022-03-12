@@ -8,11 +8,11 @@ const Post = ({post}) => {
   return (
     // <div>{post.title}</div>
     <Col>
-      <Card style={{ width: '18rem' }}>
+      <Card>
         <Card.Body>
-          <Card.Title className='text-capitalize'>{title}</Card.Title>
+          <Card.Title className='text-capitalize'>{title.slice(0,20)}...</Card.Title>
           <Card.Text>
-          {body[0].toUpperCase() + body.slice(1)}
+          {body[0].toUpperCase() + body.slice(1,120)}...
           </Card.Text>
           <Button variant="primary" onClick={()=> navigate(`/posts/${id}`)} >View Details</Button>
         </Card.Body>
